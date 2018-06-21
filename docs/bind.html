@@ -1,0 +1,486 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>绑定事件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wxss.html" />
+    
+    
+    <link rel="prev" href="wxml.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="register.html">
+            
+                <a href="register.html">
+            
+                    
+                    注册小程序账号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="downIDE.html">
+            
+                <a href="downIDE.html">
+            
+                    
+                    开发者工具 & 创建第一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    逻辑层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="onEvent.html">
+            
+                <a href="onEvent.html">
+            
+                    
+                    生命周期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="template.html">
+            
+                <a href="template.html">
+            
+                    
+                    模板引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="route.html">
+            
+                <a href="route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="module.html">
+            
+                <a href="module.html">
+            
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    视图层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="wxml.html">
+            
+                <a href="wxml.html">
+            
+                    
+                    wxml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="bind.html">
+            
+                <a href="bind.html">
+            
+                    
+                    绑定事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="wxss.html">
+            
+                <a href="wxss.html">
+            
+                    
+                    wxss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="tempView.html">
+            
+                <a href="tempView.html">
+            
+                    
+                    模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >绑定事件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;">&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</h1>
+<p>WXML&#x7684;&#x5192;&#x6CE1;&#x4E8B;&#x4EF6;&#x5217;&#x8868;&#xFF08;&#x6DFB;&#x52A0;catch&#x524D;&#x7F00;&#xFF0C;&#x975E;&#x5192;&#x6CE1;&#x65F6;&#x95F4;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-javascript">&lt;view bindtap=<span class="hljs-string">&quot;func&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span></span>
+&lt;view catchtap=<span class="hljs-string">&quot;func&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span></span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x89E6;&#x53D1;&#x6761;&#x4EF6;</th>
+<th>&#x6700;&#x4F4E;&#x7248;&#x672C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>touchstart</td>
+<td>&#x624B;&#x6307;&#x89E6;&#x6478;&#x52A8;&#x4F5C;&#x5F00;&#x59CB;</td>
+<td></td>
+</tr>
+<tr>
+<td>touchmove</td>
+<td>&#x624B;&#x6307;&#x89E6;&#x6478;&#x540E;&#x79FB;&#x52A8;</td>
+<td></td>
+</tr>
+<tr>
+<td>touchcancel</td>
+<td>&#x624B;&#x6307;&#x89E6;&#x6478;&#x52A8;&#x4F5C;&#x88AB;&#x6253;&#x65AD;&#xFF0C;&#x5982;&#x6765;&#x7535;&#x63D0;&#x9192;&#xFF0C;&#x5F39;&#x7A97;</td>
+<td></td>
+</tr>
+<tr>
+<td>touchend</td>
+<td>&#x624B;&#x6307;&#x89E6;&#x6478;&#x52A8;&#x4F5C;&#x7ED3;&#x675F;</td>
+<td></td>
+</tr>
+<tr>
+<td>tap</td>
+<td>&#x624B;&#x6307;&#x89E6;&#x6478;&#x540E;&#x9A6C;&#x4E0A;&#x79BB;&#x5F00;</td>
+<td></td>
+</tr>
+<tr>
+<td>longpress</td>
+<td>&#x624B;&#x6307;&#x89E6;&#x6478;&#x540E;&#xFF0C;&#x8D85;&#x8FC7;350ms&#x518D;&#x79BB;&#x5F00;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5E76;&#x89E6;&#x53D1;&#x4E86;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;tap&#x4E8B;&#x4EF6;&#x5C06;&#x4E0D;&#x88AB;&#x89E6;&#x53D1;</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank">1.5.0</a></td>
+</tr>
+<tr>
+<td>longtap</td>
+<td>&#x624B;&#x6307;&#x89E6;&#x6478;&#x540E;&#xFF0C;&#x8D85;&#x8FC7;350ms&#x518D;&#x79BB;&#x5F00;&#xFF08;&#x63A8;&#x8350;&#x4F7F;&#x7528;longpress&#x4E8B;&#x4EF6;&#x4EE3;&#x66FF;&#xFF09;</td>
+<td></td>
+</tr>
+<tr>
+<td>transitionend</td>
+<td>&#x4F1A;&#x5728; WXSS transition &#x6216; wx.createAnimation &#x52A8;&#x753B;&#x7ED3;&#x675F;&#x540E;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td>animationstart</td>
+<td>&#x4F1A;&#x5728;&#x4E00;&#x4E2A; WXSS animation &#x52A8;&#x753B;&#x5F00;&#x59CB;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td>animationiteration</td>
+<td>&#x4F1A;&#x5728;&#x4E00;&#x4E2A; WXSS animation &#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x7ED3;&#x675F;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td>animationend</td>
+<td>&#x4F1A;&#x5728;&#x4E00;&#x4E2A; WXSS animation &#x52A8;&#x753B;&#x5B8C;&#x6210;&#x65F6;&#x89E6;&#x53D1;</td>
+<td></td>
+</tr>
+<tr>
+<td>touchforcechange</td>
+<td>&#x5728;&#x652F;&#x6301; 3D Touch &#x7684; iPhone &#x8BBE;&#x5907;&#xFF0C;&#x91CD;&#x6309;&#x65F6;&#x4F1A;&#x89E6;&#x53D1;</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank">1.9.90</a></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="wxml.html" class="navigation navigation-prev " aria-label="Previous page: wxml">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wxss.html" class="navigation navigation-next " aria-label="Next page: wxss">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"绑定事件","level":"1.5.2","depth":2,"next":{"title":"wxss","level":"1.5.3","depth":2,"path":"docs/wxss.md","ref":"./docs/wxss.md","articles":[]},"previous":{"title":"wxml","level":"1.5.1","depth":2,"path":"docs/wxml.md","ref":"./docs/wxml.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/bind.md","mtime":"2018-06-21T13:17:26.874Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-21T13:18:39.634Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
